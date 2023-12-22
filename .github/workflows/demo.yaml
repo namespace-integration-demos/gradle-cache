@@ -6,7 +6,7 @@ jobs:
       runs-on:
         # Replace with your profile label https://namespace.so/docs/features/faster-github-actions#using-runner-profiles
         - namespace-profile-amd64-with-caching
-      name: Sample with cache
+      name: Sample with Namespace cache
       steps:
           - name: Checkout
             uses: actions/checkout@v3
@@ -33,7 +33,7 @@ jobs:
     run-with-github-cache:
         runs-on:
             - ubuntu-latest
-        name: Sample with cache
+        name: Sample with GitHub cache
         steps:
             - name: Checkout
               uses: actions/checkout@v3
