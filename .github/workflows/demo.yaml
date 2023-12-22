@@ -20,9 +20,7 @@ jobs:
           - name: Set up cache
             uses: namespacelabs/nscloud-cache-action@v1
             with:
-                path: |
-                    ~/.gradle/caches
-                    ~/.gradle/wrapper
+              cache: gradle
 
           - name: Setup Gradle
             uses: gradle/gradle-build-action@v2
